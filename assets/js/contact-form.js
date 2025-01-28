@@ -1,33 +1,45 @@
-// const userId = "12lCSDbTpydxL8Tmy";
 const serviceId = "service_fq2uc43";
 const templateId = "template_mg93ywe";
 
 const submitHandler = (event) => {
-  event.preventDefault(); 
+  event.preventDefault();
+  const form = event.target;
+  const submitBtn = form.querySelector('.form-btn');
+  const btnText = submitBtn.querySelector('span');
+  
+  // Disable button and show spinner
+  submitBtn.disabled = true;
+  btnText.textContent = 'Sending...';
 
-  const fullname = document.getElementById("fullname").value;
-  const email = document.getElementById("email").value;
-  const message = document.getElementById("message").value;
+  // Get form values
+  const formData = {
+    fullname: document.getElementById('fullname').value.trim(),
+    email: document.getElementById('email').value.trim(),
+    message: document.getElementById('message').value.trim()
+  };
 
-  if (!fullname || !email || !message) {
-    alert("All fields are required!");
+  // Validate form
+  if (!formData.fullname || !formData.email || !formData.message) {
+    alert('Please fill in all required fields');
+    resetButton(submitBtn, btnText);
     return;
   }
 
-  emailjs
-    .send(serviceId, templateId, { fullname, email, message })
-    .then(
-      (response) => {
-        alert("Message sent successfully!");
-        console.log("SUCCESS", response.status, response.text);
-
-        document.getElementById("fullname").value = "";
-        document.getElementById("email").value = "";
-        document.getElementById("message").value = "";
-      },
-      (error) => {
-        alert("Failed to send the message. Please try again.");
-        console.error("ERROR", error);
-      }
-    );
+  // Send email
+  emailjs.sendForm(serviceId, templateId, form)
+    .then((response) => {
+      alert('Message sent successfully!');
+      form.reset();
+    })
+    .catch((error) => {
+      alert(`Error sending message: ${error.text}`);
+    })
+    .finally(() => {
+      resetButton(submitBtn, btnText);
+    });
 };
+
+function resetButton(button, textElement) {
+  button.disabled = false;
+  textElement.textContent = 'Send Message';
+}
