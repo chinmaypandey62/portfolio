@@ -197,6 +197,13 @@ article {
   z-index: 1;
 }
 
+.link-icon {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: start;
+}
+
 .icon-box::before {
   content: "";
   position: absolute;
@@ -238,6 +245,7 @@ article.active {
   font-size: var(--fs-7);
   font-weight: var(--fw-500);
 }
+
 
 .article-title {
   position: relative;
@@ -540,6 +548,13 @@ main {
   z-index: -1;
 }
 
+.social-item {
+  list-style: none;
+  display: inline-block;
+  margin: 10px;
+}
+
+
 .service-icon-box { margin-bottom: 10px; }
 
 .service-icon-box img { margin: auto; }
@@ -556,6 +571,15 @@ main {
   text-align: justify;
 }
 
+.social-link {
+  text-decoration: none;
+}
+
+.social-icon {
+  width: 19px; 
+  height: 19px; 
+  filter: invert(1);
+}
 
 /**
  * #testimonials 
