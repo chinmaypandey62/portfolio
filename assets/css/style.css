@@ -557,7 +557,12 @@ main {
   margin: 10px;
 }
 
-.service-icon-box { margin-bottom: 10px; }
+.service-icon-box { 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px; /* Ensure consistent spacing */
+}
 
 .service-icon-box img { margin: auto; }
 
