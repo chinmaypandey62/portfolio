@@ -938,6 +938,14 @@ main {
   pointer-events: all;
 }
 
+.filter-select .select-icon ion-icon {
+  color: var(--white-2); /* Set chevron down icon color to white */
+}
+
+.filter-select .select-value {
+  color: var(--white-2); /* Set text color to white */
+}
+
 .select-item button {
   background: var(--eerie-black-2);
   color: var(--white-2); /* Change text color to white */
