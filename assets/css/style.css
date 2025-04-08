@@ -2056,6 +2056,9 @@ textarea.form-input::-webkit-resizer { display: none; }
   .sidebar {
     min-height: 186px;
   }
+  .sidebar.active {
+    min-height: 510px;
+  }
   .sidebar-info {
     display: flex;
     flex-direction: column;
