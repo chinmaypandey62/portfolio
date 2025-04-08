@@ -1998,7 +1998,7 @@ textarea.form-input::-webkit-resizer { display: none; }
   .sidebar {
     min-height: 248px;
   }
-
+  
   .sidebar.active {
     min-height: 548px;
   }
@@ -2025,6 +2025,10 @@ textarea.form-input::-webkit-resizer { display: none; }
   .info-content {
     width: 60%;
     text-align: center;
+  }
+
+  .navbar {
+    border: 2px solid var(--orange-yellow-crayola);
   }
 }
 
