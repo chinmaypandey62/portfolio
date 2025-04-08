@@ -930,8 +930,11 @@ main {
 
 .skills-box-container {
   display: flex;
+  justify-content: space-around;
+  align-items: center;
   flex-wrap: wrap;
   gap: 10px;
+  margin-bottom: 20px;
 }
 
 .skills-box {
@@ -2066,7 +2069,11 @@ textarea.form-input::-webkit-resizer { display: none; }
   }
 
   .navbar {
-    border: 2px solid var(--orange-yellow-crayola);
+    border: 20px solid var(--bg-gradient-yellow-1);
+  }
+  .navbar-link {
+    font-size: 1rem;
+    font-weight:bold;
   }
 }
 
