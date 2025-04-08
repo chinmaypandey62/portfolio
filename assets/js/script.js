@@ -158,6 +158,7 @@ for (let i = 0; i < navigationLinks.length; i++) {
     // Handle "Hire Me" button separately
     if (this.classList.contains("hire-me-btn")) {
       document.querySelector("[data-page='contact']").classList.add("active");
+      navigationLinks[navigationLinks.length - 1].classList.add("active"); // Set "Contact" nav link active
       window.scrollTo(0, 0);
     }
   });
