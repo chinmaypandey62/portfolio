@@ -13,8 +13,8 @@
 **Full Stack Developer & AI/ML Enthusiast**
 
 📍 **Location:** Kanpur, India 🇮🇳  
-🎓 **Education:** B.Tech CS (2026) | GPA: 8.52/10.0  
-🏆 **Competitive:** 800+ LeetCode • Top 9% Globally  
+🎓 **Education:** B.Tech CS (2026) | GPA: 8.5/10.0  
+🏆 **Competitive:** 900+ LeetCode • Top 9% Globally  
 ⚡ **Current Focus:** AI/ML Engineering, System Design
 
 <table>
