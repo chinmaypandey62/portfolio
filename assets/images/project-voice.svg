@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -9 640 418" role="img" aria-label="Voice waveform">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#1b2a2e"/>
+      <stop offset="1" stop-color="#121214"/>
+    </linearGradient>
+    <linearGradient id="bar" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#5ce1e6"/>
+      <stop offset="1" stop-color="#2a9fa4"/>
+    </linearGradient>
+  </defs>
+  <rect y="-9" width="640" height="418" fill="url(#bg)"/>
+  <g fill="url(#bar)">
+    <rect x="80"  y="170" width="14" height="60"  rx="7"/>
+    <rect x="112" y="140" width="14" height="120" rx="7"/>
+    <rect x="144" y="110" width="14" height="180" rx="7"/>
+    <rect x="176" y="150" width="14" height="100" rx="7"/>
+    <rect x="208" y="90"  width="14" height="220" rx="7"/>
+    <rect x="240" y="60"  width="14" height="280" rx="7"/>
+    <rect x="272" y="120" width="14" height="160" rx="7"/>
+    <rect x="304" y="80"  width="14" height="240" rx="7"/>
+    <rect x="336" y="130" width="14" height="140" rx="7"/>
+    <rect x="368" y="100" width="14" height="200" rx="7"/>
+    <rect x="400" y="150" width="14" height="100" rx="7"/>
+    <rect x="432" y="120" width="14" height="160" rx="7"/>
+    <rect x="464" y="165" width="14" height="70"  rx="7"/>
+    <rect x="496" y="150" width="14" height="100" rx="7"/>
+    <rect x="528" y="180" width="14" height="40"  rx="7"/>
+  </g>
+  <text x="320" y="368" fill="#d6d6d6" font-family="Poppins, Arial, sans-serif" font-size="26" font-weight="500" text-anchor="middle">VOICE</text>
+</svg>
